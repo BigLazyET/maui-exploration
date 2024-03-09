@@ -2,13 +2,15 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="handler.exploration.Pages.FooEntryPage"
-             xmlns:contols="clr-namespace:handler.exploration.Controls"
+             xmlns:controls="clr-namespace:handler.exploration.Controls"
              Title="FooEntryPage">
     <StackLayout>
         <Label Text="FooEntry Demo"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
 
-        <contols:FooEntry Placeholder="foo entry"/>
+        <Entry Text="normal entry"/>
+        <controls:FooEntry Text="foo entry"/>
+        <controls:FooEntry Text="foo entry handler lifecycle" HandlerChanged="FooEntry_HandlerChanged" HandlerChanging="FooEntry_HandlerChanging"/>
     </StackLayout>
 </ContentPage>
