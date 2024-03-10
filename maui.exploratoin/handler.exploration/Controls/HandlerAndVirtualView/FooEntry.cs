@@ -8,5 +8,6 @@ namespace handler.exploration.Controls
 {
     internal class FooEntry : Entry
     {
+
     }
 }

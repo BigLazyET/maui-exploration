@@ -63,13 +63,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Handlers\HandlerAndVirtualAndPlatformView\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <MauiXaml Update="Pages\HandlerAndVirtualView\FooEntryPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Controls\HandlerAndVirtualAndPlatformView\" />
+	  <Folder Include="Handlers\HandlerAndVirtualAndPlatformView\" />
 	</ItemGroup>
 
 </Project>
