@@ -18,4 +18,8 @@
      ContentTemplate="{DataTemplate page:FooEntryPage}"
      Route="FooEntyPage" />
 
+    <ShellContent Title="ImageEntry"
+                  ContentTemplate="{DataTemplate page:ImageEntryPage}"
+                  Route="ImageEntryPage" />
+
 </Shell>

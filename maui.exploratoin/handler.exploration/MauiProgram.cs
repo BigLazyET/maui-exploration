@@ -1,4 +1,5 @@
-﻿using handler.exploration.Handlers;
+﻿using handler.exploration.Controls;
+using handler.exploration.Handlers;
 using Microsoft.Extensions.Logging;
 
 namespace handler.exploration
@@ -14,6 +15,10 @@ namespace handler.exploration
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                })
+                .ConfigureMauiHandlers(handlers =>
+                {
+                    handlers.AddHandler(typeof(ImageEntry), typeof(ImageEntryHandler));
                 });
 
 #if DEBUG
