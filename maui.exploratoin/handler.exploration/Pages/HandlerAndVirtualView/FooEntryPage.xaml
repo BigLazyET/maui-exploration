@@ -9,7 +9,7 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
 
-        <Entry Text="normal entry"/>
+        <Entry Text="normal entry" />
         <controls:FooEntry Text="foo entry"/>
         <controls:FooEntry Text="foo entry handler lifecycle" HandlerChanged="FooEntry_HandlerChanged" HandlerChanging="FooEntry_HandlerChanging"/>
     </StackLayout>

@@ -1,5 +1,6 @@
 ﻿using handler.exploration.Controls;
 using handler.exploration.Handlers;
+using handler.exploration.Interfaces;
 using Microsoft.Extensions.Logging;
 
 namespace handler.exploration
@@ -18,7 +19,8 @@ namespace handler.exploration
                 })
                 .ConfigureMauiHandlers(handlers =>
                 {
-                    handlers.AddHandler(typeof(ImageEntry), typeof(ImageEntryHandler));
+                    handlers.AddHandler(typeof(ImageEntry), typeof(ImageEntryHandler))
+                            .AddHandler(typeof(GLabel), typeof(GLabelHandler));
                 });
 
 #if DEBUG

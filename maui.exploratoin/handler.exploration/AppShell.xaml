@@ -22,4 +22,8 @@
                   ContentTemplate="{DataTemplate page:ImageEntryPage}"
                   Route="ImageEntryPage" />
 
+    <ShellContent Title="GLabel"
+                  ContentTemplate="{DataTemplate page:GLablePage}"
+                  Route="GLablePage" />
+
 </Shell>
