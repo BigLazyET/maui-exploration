@@ -19,8 +19,6 @@ namespace handler.exploration.Handlers
         public override void SetVirtualView(IView view)
         {
             base.SetVirtualView(view);
-
-            defaultBrush = (VirtualView as Entry)
         }
 
         private void OnLostFocus(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
